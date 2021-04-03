@@ -27,8 +27,8 @@ ynh_abort_if_errors
 domain=$YNH_APP_ARG_DOMAIN
 path_url=$YNH_APP_ARG_PATH
 is_public=$YNH_APP_ARG_IS_PUBLIC
-mqtt_server=$YNH_APP_ARG_MQTT-SERVER
-mqtt_port=$YNH_APP_ARG_MQTT-PORT
+mqtt_server=$YNH_APP_ARG_MQTT_SERVER
+mqtt_port=$YNH_APP_ARG_MQTT_PORT
 
 
 ### If it's a multi-instance app, meaning it can be installed several times independently
