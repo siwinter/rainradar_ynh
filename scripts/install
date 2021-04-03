@@ -100,7 +100,7 @@ ynh_script_progression --message="Setting up source files..." --time --weight=1
 
 ynh_app_setting_set --app=$app --key=final_path --value=$final_path
 # Download, check integrity, uncompress and patch the source from app.src
-ynh_setup_source --dest_dir="$final_path"
+ynh_setup_source --dest_dir="$final_path/source"
 
 #=================================================
 # NGINX CONFIGURATION
@@ -126,8 +126,6 @@ ynh_system_user_create --username=$app
 # ...
 #=================================================
 ynh_script_progression --message="Initializing backend Python virtualenv..." --time --weight=1
-
-python3 -m venv "${final_path}/env"
 
 pushd $final_path || ynh_die
 	chown -R $app:$app $final_path
