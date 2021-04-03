@@ -14,7 +14,7 @@
     "requirements": {
         "yunohost": ">= 4.1.3"
     },
-    "multi_instance": falsee,
+    "multi_instance": false,
     "services": [
     ],
     "arguments": {
