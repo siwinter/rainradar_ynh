@@ -132,7 +132,7 @@ python3 -m venv "${final_path}/env"
 pushd $final_path || ynh_die
 	chown -R $app:$app $final_path
 	ynh_exec_as $app python3 -m venv $final_path/venv
-	ynh_exec_as $app $final_path/venv/bin/pip --cache-dir $backend_path/.cache/pip install -U wheel pip setuptools 2>&1
+	ynh_exec_as $app $final_path/venv/bin/pip --cache-dir $final_path/.cache/pip install -U wheel pip setuptools 2>&1
 popd || ynh_die
 
 #=================================================
