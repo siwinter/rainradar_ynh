@@ -42,7 +42,7 @@
                 "default": true
             },
             {
-                "name": "MQTT-server",
+                "name": "mqtt_server",
 				"type": "string",
 				"ask": {
 					"en": "IP-Address for MQTT-connection"
@@ -50,7 +50,7 @@
                 "example": "192.168.1.15"
             },
             {
-                "name": "MQTT-port",
+                "name": "mqtt_port",
 				"type": "string",
 				"ask": {
 					"en": "Port for MQTT-connection"
