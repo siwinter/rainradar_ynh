@@ -133,8 +133,6 @@ pushd $final_path || ynh_die
 	ynh_exec_as $app $final_path/venv/bin/pip --cache-dir $final_path/.cache/pip install -U wheel pip setuptools 2>&1
 popd || ynh_die
 
-	ynh_exec_as $app $final_path/env/bin/python3 -m pip install --no-cache-dir Mopidy-MusicBox-Webclient==3.1.0
-
 #=================================================
 # SETUP SYSTEMD
 #=================================================
