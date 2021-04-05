@@ -1,12 +1,12 @@
 {
-    "name": "YunoHost rainradar app",
+    "name": "Rainradar",
     "id": "rainradar",
     "packaging_format": 1,
     "description": {
         "en": "virtual rainsensor using mqtt"
     },
-    "version": "1.0~ynh1",
-    "url": "https://example.com",
+    "version": "0.0.5~ynh1",
+    "url": "https://github.com/siwinter/rainradar",
     "license": "free",
     "maintainer": {
         "name": "siwinter"
@@ -39,7 +39,7 @@
             {
                 "name": "is_public",
                 "type": "boolean",
-                "default": true
+                "default": false
             },
             {
                 "name": "mqtt_server",
@@ -47,7 +47,8 @@
 				"ask": {
 					"en": "IP-Address for MQTT-connection"
 				},
-                "example": "192.168.1.15"
+                "example": "192.168.1.15",
+                "default": "localhost"
             },
             {
                 "name": "mqtt_port",
@@ -55,7 +56,7 @@
 				"ask": {
 					"en": "Port for MQTT-connection"
 				},
-                "default": "1884",
+                "default": "1883",
                 "example": "1884"
             }
         ]
