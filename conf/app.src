@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/siwinter/rainradar/archive/refs/tags/v0.0.5.tar.gz
-SOURCE_SUM=d45771cb69a99ba5c9378b5a781b30587bb491ad266d9d3976922cb1361b28df
+SOURCE_URL=https://github.com/siwinter/rainradar/archive/refs/tags/v0.0.6.tar.gz
+SOURCE_SUM=f83467d7b09aeed8c2e877a7b88e2ea5d6d3e6dddd165250342a830c3c74ad4e
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
